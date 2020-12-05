@@ -34,7 +34,7 @@ body {
 
 .column .texto h4 {
     font-size: 26px;
-    margin: 22px 0;
+    margin: 16px 0px 0px;
     background-color: transparent;
     border: none;
     color: #e8f752;
@@ -50,10 +50,10 @@ body {
 
 .column h3 {
     font-size: 26px;
-    font-weight: 800;
-    line-height: 35px;
+    font-weight: 1000;
+    line-height: 30px;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 5px;
     color: #e8f752;
     -webkit-text-stroke: 1px #221919;
     font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -63,8 +63,8 @@ body {
 }
 
 .column .header span {
-    font-weight: 700;
-    font-size: 22px;
+    font-weight: 0;
+    font-size: 24px;
     color: #b5c041;
     font-family: 'Arial Narrow Bold';
     animation: fadeIn; 
@@ -92,4 +92,14 @@ display: flex;
 justify-content: center;
 text-align: center;
 align-self: baseline;
+}
+
+.column #click-toggle {
+    width: 75px;
+    cursor: pointer;
+}
+
+.column #show-toggle {
+    width: 500px;
+    display: none;
 }

@@ -3,48 +3,75 @@
 
 <head>
     <title>Scorpius</title>
-    <link rel="icon" src="assets/scorpio_PNG2.png">
+    <link rel="icon" href="assets/images/scorpio1.png">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    
-     <div class="container">
 
-      <div class="column">
+    <div class="container">
 
-         <div class="header">
-         <a href="https://open.spotify.com/playlist/2KbOPgxcCQy6OQMjzWESda?si=Xnqfjx4GTxWfilnRdnmfFw"><img src="assets/sol.jpg" title="sol" alt="sol" link></a>
-             <h3>1   2   3</h3>
-             <span> En el fondo de mí se esconde un corazón sensible y dulce. 
-                 Quizá muy en el fondo, pero ahí está</span>
-            
-         </div>
+        <div class="column">
 
-        <div class= "texto">
+            <div class="header">
+                <a href="https://open.spotify.com/playlist/2KbOPgxcCQy6OQMjzWESda?si=Xnqfjx4GTxWfilnRdnmfFw"><img
+                        src="assets/images/sol.jpg" title="sol" alt="sol" link></a>
+                <h3>1 2 3</h3>
+                <span> En el fondo de mí se esconde un corazón sensible y dulce.
+                    Quizá muy en el fondo, pero ahí está</span>
 
-            <h4>Nada te llevarás</h4>
+            </div>
 
-            <h4>Cuando te marches</h4>
+            <div class="texto">
 
-            <h4>Cuando se acerque</h4>
+                <h4>Nada te llevarás</h4>
 
-            <h4>El día de tu final</h4>
+                <h4>Cuando te marches</h4>
 
+                <h4>Cuando se acerque</h4>
 
+                <h4>El día de tu final</h4>
 
-
-
-            </div>     
-        
-        <a href="https://discord.gg/gEGxZntbkn" class="discord">Discord </a>
+            </div>
 
 
-     </div>
+            <img id="show-toggle" src="assets/images/everything.png" style="display:none; width: 500px;">
+            <img id="click-toggle" style="width: 75px;" src="assets/images/scorpio2.png"
+                onclick="playAudio('assets/music/yeule-An-Angel.mp3')">
 
-     </div>
+
+            <a href="https://discord.gg/gEGxZntbkn" class="discord">Discord </a>
+
+
+
+
+
+        </div>
+
+    </div>
+ <!-- Probando -->
+
+
+    <script>
+
+        $.fn.center = function () {
+            this.css("position", "absolute");
+            this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+            this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+            return this;
+        }
+
+        $("#click-toggle").on("click", function () {
+            $("#show-toggle").fadeIn().center();
+            setTimeout(function () {
+                $("#show-toggle").fadeOut()
+            }, 4000);
+        });
+
+    </script>
 
 </body>
 
