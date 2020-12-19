@@ -17,7 +17,7 @@
         <div class="column">
 
             <div class="header">
-                <a href="https://open.spotify.com/playlist/2KbOPgxcCQy6OQMjzWESda?si=Xnqfjx4GTxWfilnRdnmfFw"><img
+                <a class="title" href="https://open.spotify.com/playlist/2KbOPgxcCQy6OQMjzWESda?si=Xnqfjx4GTxWfilnRdnmfFw" target="_blank" rel="noopener noreferrer"><img
                         src="assets/images/sol.jpg" title="sol" alt="sol" link></a>
                 <h3>1 2 3</h3>
                 <span> En el fondo de mí se esconde un corazón sensible y dulce.
@@ -43,7 +43,7 @@
                 onclick="playAudio('assets/music/yeule-An-Angel.mp3')">
 
 
-            <a href="https://discord.gg/gEGxZntbkn" class="discord">Discord </a>
+            <a href="https://discord.gg/gEGxZntbkn" target="_blank" rel="noopener noreferrer" class="discord">Discord </a>
 
 
 
@@ -72,6 +72,206 @@
         });
 
     </script>
+
+<div class="buffer one"></div>
+
+
+<div class="container dos">
+
+    <div class="column dos">
+
+        <div class="header">
+            <a class="title" href="https://open.spotify.com/playlist/2KbOPgxcCQy6OQMjzWESda?si=Xnqfjx4GTxWfilnRdnmfFw" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/images/e2.png" title="er2" alt="revolver" link></a>
+            <h3>Ayer</h3>
+            <span> Lo que es consciente se desgasta. 
+                Lo que es inconsciente permanece inalterable.
+                Pero una vez liberado ¿no cae a su vez en ruinas?</span>
+
+        </div>
+
+        <div class="texto">
+
+            <h4>Vive feliz ahora</h4>
+
+            <h4>Mientras puedas</h4>
+
+            <h4>Tal vez mañana</h4>
+
+            <h4>No tengas tiempo</h4>
+
+            <h4>Para despertar</h4>
+
+
+        </div>
+
+
+        <img id="show-toggle2" src="assets/images/everything2.png" style="display:none; width: 500px;">
+        <img id="click-toggle2" style="width: 50px;" src="assets/images/brujita.png"
+            onclick="playAudio('assets/music/Vetusta Morla - Consejo de Sabios.mp3')">
+
+
+        <a style="color:#a7b88f;" href="https://discord.gg/gEGxZntbkn" target="_blank" rel="noopener noreferrer" class="discord">Discord </a>
+
+
+
+
+
+    </div>
+
+</div>
+
+<script>
+
+    $.fn.center = function () {
+        this.css("position", "absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+    }
+
+    $("#click-toggle2").on("click", function () {
+        $("#show-toggle2").fadeIn().center();
+        setTimeout(function () {
+            $("#show-toggle2").fadeOut()
+        }, 4000);
+    });
+
+</script>
+
+<div class="buffer two"></div>
+
+
+<div class="container tres">
+
+    <div class="column tres">
+
+        <div class="header">
+            <a class="title" href="https://open.spotify.com/playlist/2KbOPgxcCQy6OQMjzWESda?si=Xnqfjx4GTxWfilnRdnmfFw" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/images/e3.png" title="er3" alt="frt" link></a>
+            <h3>Pasajero</h3>
+            <span> Todo lo sólido se desvanece en el aire. 
+                Todo lo sagrado es profanado</span>
+
+        </div>
+
+        <div class="texto">
+
+            <h4>¿Obra del Espíritu Santo o del Diablo?</h4>
+
+        </div>
+
+
+        <img id="show-toggle3" src="assets/images/everything3.png" style="display:none; width: 500px; ">
+        <img id="click-toggle3" style="width: 50px; margin-top: 20px;" src="assets/images/FA.png"
+            onclick="playAudio('assets/music/Vetusta Morla - Cuarteles de Invierno.mp3')">
+
+
+        <a style="color:#2d3d17;" href="https://discord.gg/gEGxZntbkn" target="_blank" rel="noopener noreferrer" class="discord">Discord </a>
+
+
+
+
+
+    </div>
+
+</div>
+
+<script>
+
+    $.fn.center = function () {
+        this.css("position", "absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+    }
+
+    $("#click-toggle3").on("click", function () {
+        $("#show-toggle3").fadeIn().center();
+        setTimeout(function () {
+            $("#show-toggle3").fadeOut()
+        }, 4000);
+    });
+
+</script>
+
+<div class="buffer three" ></div>
+
+<div class="container cuatro">
+
+    <div class="column cuatro">
+
+        <div class="header">
+            <a class="title" href="https://open.spotify.com/playlist/2KbOPgxcCQy6OQMjzWESda?si=Xnqfjx4GTxWfilnRdnmfFw" target="_blank" rel="noopener noreferrer"><img
+                    src="assets/images/e4.png" title="er4" alt="frt" link></a>
+            <h3>Ninharias</h3>
+            <span>Imagenes de una mente fragmentada</span>
+
+        </div>
+
+        <div class="grid-container">
+            <a href="assets/images/img1.gif" target="_blank" rel="noopener noreferrer"><div class="item1"><img src="assets/images/img1.gif" style="width:300px;height:235px; "></div></a>
+            <a href="assets/images/img2.gif" target="_blank" rel="noopener noreferrer"><div class="item2"><img src="assets/images/img2.gif" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img3.gif" target="_blank" rel="noopener noreferrer"><div class="item3"><img src="assets/images/img3.gif" style="width:300px;height:235px;"></div></a>  
+            <a href="assets/images/img4.png" target="_blank" rel="noopener noreferrer"><div class="item4"><img src="assets/images/img4.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img5.png" target="_blank" rel="noopener noreferrer"><div class="item5"><img src="assets/images/img5.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img6.gif" target="_blank" rel="noopener noreferrer"><div class="item6"><img src="assets/images/img6.gif" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img7.gif" target="_blank" rel="noopener noreferrer"><div class="item7"><img src="assets/images/img7.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img8.gif" target="_blank" rel="noopener noreferrer"><div class="item8"><img src="assets/images/img8.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img9.gif" target="_blank" rel="noopener noreferrer" ><div class="item9"><img src="assets/images/img9.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img10.jpg" target="_blank" rel="noopener noreferrer"><div class="item10"><img src="assets/images/img10.jpg" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img11.jpg" target="_blank" rel="noopener noreferrer"><div class="item11"><img src="assets/images/img11.jpg" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img12.gif" target="_blank" rel="noopener noreferrer"><div class="item12"><img src="assets/images/img12.gif" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img13.png" target="_blank" rel="noopener noreferrer"><div class="item13"><img src="assets/images/img13.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img14.png" target="_blank" rel="noopener noreferrer"><div class="item14"><img src="assets/images/img14.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img15.png" target="_blank" rel="noopener noreferrer"><div class="item15"><img src="assets/images/img15.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img16.png" target="_blank" rel="noopener noreferrer"><div class="item16"><img src="assets/images/img16.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img17.png" target="_blank" rel="noopener noreferrer"><div class="item17"><img src="assets/images/img17.png" style="width:300px;height:235px;"></div></a>
+            <a href="assets/images/img18.gif" target="_blank" rel="noopener noreferrer"><div class="item18"><img src="assets/images/img18.gif" style="width:300px;height:235px;"></div></a>
+
+          </div>
+          
+
+
+        <img id="show-toggle4" src="assets/images/everything4.png" style="display:none; width: 500px; ">
+        <img id="click-toggle4" style="width: 50px; margin-top: 25px;" src="assets/images/noo.png" onclick="playAudio('assets/music/Copenhague.mp3')">
+
+
+        <a style="color:#6b2424;" href="https://discord.gg/gEGxZntbkn" target="_blank" rel="noopener noreferrer" class="discord">Discord </a>
+
+
+
+
+
+    </div>
+
+</div>
+
+<script>
+
+    $.fn.center = function () {
+        this.css("position", "absolute");
+        this.css("top", Math.max(0, (($(window).height() - $(this).outerHeight()) / 2) + $(window).scrollTop()) + "px");
+        this.css("left", Math.max(0, (($(window).width() - $(this).outerWidth()) / 2) + $(window).scrollLeft()) + "px");
+        return this;
+    }
+
+    $("#click-toggle4").on("click", function () {
+        $("#show-toggle4").fadeIn().center();
+        setTimeout(function () {
+            $("#show-toggle4").fadeOut()
+        }, 4000);
+    });
+
+</script>
+
+<div class="buffer four"></div>
+
+<div class="buffer five"></div>
+
+<div class="buffer six"></div>
+
+
 
 </body>
 
